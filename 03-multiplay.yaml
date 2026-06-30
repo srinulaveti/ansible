@@ -1,0 +1,12 @@
+- name: play 1
+  hosts: web
+  tasks:
+  - name: play1 and task1
+    debug:
+      msg: "print play 1 from task"
+- name: play2
+  hosts: web
+  tasks:
+  - name: play2 and task2
+    debug:
+      msg: "print 2 from task2"
