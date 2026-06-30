@@ -1,0 +1,13 @@
+- name: Nginx installation
+  hosts: web
+  become: yes
+  tasks:
+  - name: install Nginx
+    dnf:
+      name: nginx
+      state: latest
+  - name: service status 
+    service:
+      name: nginx
+      state: started
+      enabled: yes
