@@ -1,7 +1,7 @@
 - name: play 1
   hosts: web
   vars_prompt:
-  - names: name
+  - name: name
     prompt: " please enter the name of the candidate "
     private: false
   tasks:
