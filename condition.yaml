@@ -6,6 +6,9 @@
     command: id expense
     register: user
     ignore_errors: true
+  - name: print user information
+     ansible.builtin.debug:
+       msg: "User info: {{USER}}"  
   - name: user existancy checking
     commadnd: useradd expense
       when user.rc != 0 
