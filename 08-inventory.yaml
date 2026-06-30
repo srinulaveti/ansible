@@ -3,4 +3,4 @@
   tasks:
   - name: apply the varaibles
     debug:
-      msg: " my self  and i have studied my {{study}} in {{stream}} "
+      msg: " my self{{name}} and i have studied my {{study}} in {{stream}} "
