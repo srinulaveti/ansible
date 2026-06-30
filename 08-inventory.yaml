@@ -1,5 +1,5 @@
 - name: play 1
-  hosts: web
+  hosts: localhost
   tasks:
   - name: apply the varaibles
     debug:
