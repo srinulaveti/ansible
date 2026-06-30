@@ -1,5 +1,5 @@
 - name: checking user exist or not
-  hosts: localhost
+  hosts: web
   become: yes
   tasks:
   - name: user checking
