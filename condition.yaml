@@ -5,7 +5,7 @@
   - name: user checking in server
     command: id srinu
     register: user
-    ignore_erroer: yes
+    ignore_errors: true
   - name: printing user srinu data
     debug:
       msg: "print{{user}}"
