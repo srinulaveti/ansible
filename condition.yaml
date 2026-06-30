@@ -1,5 +1,5 @@
 - name: user checking with condition
-  hosts: web
+  hosts: localhost
   become: yes
   tasks:
   - name: user checking in server
