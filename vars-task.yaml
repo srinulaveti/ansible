@@ -1,0 +1,15 @@
+- name: play 1
+  hosts: web
+  vars:
+    name: " srinu "
+    study: " b tech "
+    stream: " mechanical "
+  tasks:
+  - name: apply the varaibles
+    vars: 
+    name: "bharath"
+    debug:
+      msg: " my self {{name}} and i have studied my {{study}} in {{stream}} "
+  - name : again testing 
+    debug:
+      msg: " my self {{name}} and i have studied my {{study}} in {{stream}} "
