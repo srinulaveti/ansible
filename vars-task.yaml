@@ -7,7 +7,7 @@
   tasks:
   - name: apply the varaibles
     vars: 
-    name: "bharath"
+      name: "bharath"
     debug:
       msg: " my self {{name}} and i have studied my {{study}} in {{stream}} "
   - name : again testing 
