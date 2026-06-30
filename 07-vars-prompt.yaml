@@ -9,7 +9,7 @@
     vars: 
       name: "bharath"
     debug:
-      msg: " my self {{name}} and i have studied my {{study}} in {{stream}} "
+      msg: " my self {{name}} and i have studied my btech in mech "
   - name : again testing 
     debug:
-      msg: " my self {{name}} and i have studied my {{study}} in {{stream}} "
+      msg: " my self {{name}} and i have studied my engg in mech"
