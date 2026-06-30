@@ -11,7 +11,7 @@
        msg: "User info: {{USER}}"  
   - name: user existancy checking
     commadnd: useradd expense
-      when user.rc != 0 
+    when user.rc != 0 
   - name : printing Hello
     debug:
       msg: "print hello "
