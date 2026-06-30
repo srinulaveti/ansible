@@ -1,0 +1,6 @@
+- name: play 1
+  hosts: localhost
+  tasks:
+  - name: apply the varaibles
+    debug:
+      msg: " my self {{name}} and i have studied my {{study}} in {{stream}} "
