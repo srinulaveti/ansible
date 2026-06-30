@@ -1,18 +1,19 @@
-- name: checking user exist or not
+- name: user checking with condition
   hosts: web
   become: yes
   tasks:
-  - name: user checking
-    command: id expense
+  - name: user checking in server
+    command: id srinu
     register: user
-    ignore_errors: true
-  - name: print user information
-    ansible.builtin.debug:
-      msg: "User info: {{user}}"  
-  - name: user existancy checking
-    command: useradd expense
-    when: user.rc != 0 
-  - name : printing Hello
+    ignore_erroer: yes
+  - name: printing user srinu data
     debug:
-      msg: "print hello "
+      msg: "print{{user}}"
+  - name: if user not present adding user
+    command: useradd srinu
+    when: user != 0
+  - name : printing some thing for clarity
+    debug:
+      msg: " hii srinu"
+
 
