@@ -8,10 +8,10 @@
     ignore_errors: true
   - name: print user information
      ansible.builtin.debug:
-       msg: "User info: {{USER}}"  
+       msg: "User info: {{user}}"  
   - name: user existancy checking
-    commadnd: useradd expense
-    when user.rc != 0 
+    command: useradd expense
+    when: user.rc != 0 
   - name : printing Hello
     debug:
       msg: "print hello "
