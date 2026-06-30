@@ -1,0 +1,15 @@
+- name: checking user exist or not
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: user checking
+    command: id expense
+    register: user
+    ignore_errors: true
+  - name: user existancy checking
+    commadnd: useradd expense
+      when user.rc != 0 
+  -name : printing Hello
+    debug:
+      msg: "print hello "
+
