@@ -1,9 +1,7 @@
 - name: play 1
   hosts: web
   vars_files:
-    name: " srinu "
-    study: " b tech "
-    stream: " mechanical "
+    vars.yaml
   tasks:
   - name: apply the varaibles
     vars: 
