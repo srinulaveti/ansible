@@ -7,8 +7,8 @@
     register: user
     ignore_errors: true
   - name: print user information
-     ansible.builtin.debug:
-       msg: "User info: {{user}}"  
+    ansible.builtin.debug:
+      msg: "User info: {{user}}"  
   - name: user existancy checking
     command: useradd expense
     when: user.rc != 0 
