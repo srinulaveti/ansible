@@ -9,7 +9,7 @@
   - name: user existancy checking
     commadnd: useradd expense
       when user.rc != 0 
-  -name : printing Hello
+  - name : printing Hello
     debug:
       msg: "print hello "
 
